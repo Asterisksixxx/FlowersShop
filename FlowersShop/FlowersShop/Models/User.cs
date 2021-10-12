@@ -6,7 +6,7 @@ using FlowersShop.Models;
 
 namespace FlowersShop.Models
 {
-    public class User
+    public class UserModel
     {
         public Guid Id { get; set; }
         public string Email { get; set; }
