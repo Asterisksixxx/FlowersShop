@@ -14,6 +14,5 @@ namespace FlowersShop.Models
         public string BigImageLink { get; set; }
         public string SmallInfo { get; set; }
         public string BigInfo { get; set; }
-
     }
 }
