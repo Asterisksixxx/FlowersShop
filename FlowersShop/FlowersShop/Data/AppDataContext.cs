@@ -15,5 +15,6 @@ namespace FlowersShop.Data
         }
         public DbSet<Flower> Flowers { get; set;}
         public DbSet<New> News { get; set; }
+        public DbSet<Korzina> Korzinas { get; set; }
     }
 }

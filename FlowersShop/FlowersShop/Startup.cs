@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FlowersShop.Data;
+using FlowersShop.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlowersShop
@@ -27,6 +28,7 @@ namespace FlowersShop
         {
             services.AddDbContext<AppDataContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IFlowerService, FlowerService>();
             services.AddControllersWithViews();
         }
 
