@@ -14,7 +14,7 @@ namespace FlowersShop.Services
         void Edit(Flower flower);
         void Create(Flower flower);
         void Delete(Guid id);
-        void AddToKorzina(Flower flower);
+       // void AddToKorzina(Flower flower);
     }
     public class FlowerService:IFlowerService
     {
@@ -54,10 +54,9 @@ namespace FlowersShop.Services
             
         }
 
-        void AddToKorzina(Flower flower)
-        {
-            _appDataContext.Korzinas.Add(_appDataContext.Flowers.)
-
-        }
+        //void AddToKorzina(Flower flower)
+        //{
+        //    _appDataContext.Korzinas.Add
+        //}
     }
 }
