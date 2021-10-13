@@ -9,8 +9,8 @@ namespace FlowersShop.Services
 {
     public interface IFlowerService
     {
-        IEnumerable<Flower> Get();
-        void Get(Guid id);
+        IEnumerable<Flower> Get(); 
+        Flower Get(Guid id);
         void Edit(Flower flower);
         void Create(Flower flower);
         void Delete(Guid id);
@@ -30,9 +30,9 @@ namespace FlowersShop.Services
             return _appDataContext.Flowers;
         }
 
-        public void Get(Guid id)
+        public Flower Get(Guid id)
         {
-            _appDataContext.Flowers.FirstOrDefault(fl => fl.Id == id);
+          return _appDataContext.Flowers.FirstOrDefault(fl => fl.Id == id);
         }
 
         public void Edit(Flower flower)
