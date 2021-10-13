@@ -54,9 +54,14 @@ namespace FlowersShop.Services
             
         }
 
-        //void AddToKorzina(Flower flower)
-        //{
-        //    _appDataContext.Korzinas.Add
-        //}
+        void AddToKorzina(Flower flower,int count)
+        {
+            _appDataContext.Korzinas.Add(new Korzina
+            {
+                FlowerName = flower.Name,
+                FlowersPrice = flower.Price,
+                FlowersCount = count
+            });
+        }
     }
 }
